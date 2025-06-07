@@ -19,7 +19,7 @@ function Navbar() {
                                 <NavLink to='/addjob'  className={({ isActive }) => isActive ? "nav-link text-danger" : "nav-link text-dark"} >Add Job</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/stats' className={({ isActive }) => isActive ? "nav-link text-danger" : "nav-link text-dark"} >stats</NavLink>
+                                <NavLink to='/stats' className={({ isActive }) => isActive ? "nav-link text-danger" : "nav-link text-dark"} >Stats</NavLink>
                             </li>
                         </ul>
                         

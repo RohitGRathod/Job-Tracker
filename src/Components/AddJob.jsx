@@ -16,6 +16,7 @@ function AddJob() {
         addjobinfo({ id: Date.now(), jobTitle: jTitle, companyTitle: cTitle, status: state, date: today, deadline: startDate })
         setCTitle("")
         setJTitle("")
+        setStartDate(null)
         alert("Job added")
     }
 
@@ -32,7 +33,7 @@ function AddJob() {
                 </div>
 
                 <div className="mb-3">
-                    <select className='bg-light text-dark' value={state} onChange={(e) => setState(e.target.value)}>
+                    <select className='bg-light text-dark' value={state} onChange={(e) => setState(e.target.value)} >
                         <option value="applied">Applied</option>
                         <option value="rejected">Rejected</option>
                     </select>
@@ -44,6 +45,7 @@ function AddJob() {
                         dateFormat="dd/MM/yyyy"
                         placeholderText="Select a date"
                         isClearable
+                        required
                     />
                 </div>
 
