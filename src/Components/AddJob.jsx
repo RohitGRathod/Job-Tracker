@@ -38,7 +38,7 @@ function AddJob() {
                     </select>
                 </div>
                 <div>
-                    <DatePicker className='bg-light border border-dark'
+                    <DatePicker className='bg-light border border-dark text-dark'
                         selected={startDate}
                         onChange={(date) => setStartDate(date)}
                         dateFormat="dd/MM/yyyy"
