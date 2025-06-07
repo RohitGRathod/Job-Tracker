@@ -1,0 +1,5 @@
+.no-arrow-when-disabled:disabled {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
