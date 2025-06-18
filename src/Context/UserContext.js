@@ -7,7 +7,8 @@ export const JobContext = createContext({
         jobTitle:"title",
         companyTitle:"company title",
         status:"applied",
-        date: new Date().toISOString().split('T')[0]
+        date: new Date().toISOString().split('T')[0],
+        deadline:new Date().toISOString().split('T')[0]
         
         }
     ],
