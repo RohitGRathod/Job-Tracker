@@ -6,7 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import AddJob from './Components/AddJob.jsx'
 import Home from './Components/Home.jsx'
 import JobStatusChart from './Components/JobStatusChart.jsx'
-import { Analytics } from "@vercel/analytics/next"
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +21,6 @@ const router = createBrowserRouter(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
-    <Analytics />
+   
   </StrictMode>,
 )
